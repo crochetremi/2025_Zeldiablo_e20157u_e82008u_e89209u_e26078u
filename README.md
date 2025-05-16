@@ -1,4 +1,4 @@
 CINAR Erdal
 CROCHET Rémi
-PIQUAND Maẽl
+PIQUAND Maël
 VIDIRI Luca
