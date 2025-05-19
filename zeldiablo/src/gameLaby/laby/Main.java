@@ -1,5 +1,9 @@
 package gameLaby.laby;
 
+import moteurJeu.DessinJeu;
+import moteurJeu.MoteurJeu;
+
+import java.awt.*;
 import java.io.IOException;
 
 /**
@@ -8,8 +12,10 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        // charge le labyrinthe
-        Labyrinthe laby = new Labyrinthe("labySimple/laby0.txt");
+        // charge le labyrinthe à partir de labyjeu
+        LabyJeu lb = new LabyJeu();
+        lb.init();
+        Labyrinthe laby = lb.getLabyrinthe();
 
         //affiche le labyrinthe charge
         for (int y = 0; y < laby.getLengthY(); y++) {
@@ -23,5 +29,6 @@ public class Main {
             // saut de ligne
             System.out.println();
         }
+
     }
 }
