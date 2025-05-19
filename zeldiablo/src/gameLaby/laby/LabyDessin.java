@@ -28,7 +28,7 @@ public class LabyDessin implements DessinJeu {
         Perso pj = laby.getLabyrinthe().pj;
         double px = pj.x;
         double py = pj.y;
-        gc.fillRect(px, py, 10, 10);
+        gc.fillRect(px * 20, py*20, 20, 20);
 
 
 
@@ -36,7 +36,7 @@ public class LabyDessin implements DessinJeu {
             for(int j = 0; j < laby.getLabyrinthe().getLengthY(); j++){
                 if( laby.getLabyrinthe().getMur(i,j) == true ) {
                     gc.setFill(Color.BLACK);
-                    gc.fillRect(i*10,j*10,10,20);
+                    gc.fillRect(i*20,j*20,20,20);
                 }
             }
         }
