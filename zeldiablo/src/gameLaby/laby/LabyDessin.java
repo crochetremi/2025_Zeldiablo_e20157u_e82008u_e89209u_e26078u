@@ -5,6 +5,7 @@ import gameArkanoid.Raquette;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.ArcType;
 import moteurJeu.DessinJeu;
 import moteurJeu.Jeu;
 
@@ -28,8 +29,8 @@ public class LabyDessin implements DessinJeu {
         Perso pj = laby.getLabyrinthe().pj;
         double px = pj.x;
         double py = pj.y;
-        gc.fillRect(px * 20, py*20, 20, 20);
-
+        //gc.fillRect(px * 20, py*20, 20, 20);
+        gc.fillArc(px*20, py*20, 20, 20, 0, 360, ArcType.ROUND);
 
 
         for(int i = 0; i <laby.getLabyrinthe().getLength(); i++){
