@@ -4,7 +4,11 @@ public class Monstre {
     private int x;
     private int y;
 
-    public Monstre() {}
+    public Monstre(Labyrinthe laby) {
+        int[] posMonstre = positionAleatoire(laby);
+        x = posMonstre[0];
+        y = posMonstre[1];
+    }
 
     /**
      * Cette méthode renvoie un tableau de longeur 2 de coordonées valide, elle permet de préparer l'apparition du monde
@@ -21,11 +25,14 @@ public class Monstre {
             positionvalide = !(labyrinthe.getMur(position[0], position[1]))
         }
         return position;
+<<<<<<< HEAD
     }
 
     private static void choisirCaseHasard(Labyrinthe labyrinthe, int[] position) {
         int length = labyrinthe.getLength();
         position[0] = (int)(Math.random()* length);
         position[1] = (int)(Math.random()* length);
+=======
+>>>>>>> 12cd3c2 (monstre)
     }
 }
