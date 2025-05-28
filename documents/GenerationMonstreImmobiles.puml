@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Main -> Labyrinthe: genererMonstre()
+activate Labyrinthe
+
+Labyrinthe -> Monstre: Monstre()
+activate Monstre
+
+
+Monstre -> Monstre: positionAleatoire()
+Monstre <-- Monstre: int[]
+
+
+Labyrinthe <-- Monstre
+deactivate Monstre
+
+Labyrinthe -> Labyrinthe: ajouterMonstre(Monstre m)
+
+Main <-- Labyrinthe
+deactivate Labyrinthe
+
+
+
+
+@enduml
