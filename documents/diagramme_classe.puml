@@ -14,18 +14,18 @@ class Monstre{
 
 class Labyrinthe{
 
-    - X : char
-    - P : char
-    - . : char
-    Haut : String
-    Bas : String
-    Gauche : String
-    Droite : String
-    pj : Perso
-    murs : boolean[][]
+    + X : char
+    + P : char
+    + . : char
+    + Haut : String
+    + Bas : String
+    + Gauche : String
+    + Droite : String
+    + pj : Perso
+    + murs : boolean[][]
 
     + getSuivant(int, int, String): int[]
-    + Labyrinthte(String): void
+    + Labyrinthe(String): void
     + deplacerPerso(String)
     + etreFini(): boolean
     + getLengthY(): int
