@@ -27,7 +27,7 @@ public class LabyJeu implements Jeu {
 
     public void init()  {
         try{
-            this.labyrinthe = new Labyrinthe("zeldiablo/labySimple/laby1.txt");
+            this.labyrinthe = new Labyrinthe("zeldiablo/labySimple/laby2.txt");
 
         }
         catch (IOException e){
