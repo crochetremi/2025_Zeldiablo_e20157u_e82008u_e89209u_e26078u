@@ -22,9 +22,10 @@ public class Monstre {
         boolean positionvalide = false;
         while (!positionvalide) {
             choisirCaseHasard(labyrinthe, position);
-            positionvalide = !(labyrinthe.getMur(position[0], position[1]))
+            positionvalide = !(labyrinthe.getMur(position[0], position[1]));
         }
         return position;
+
     }
 
     private static void choisirCaseHasard(Labyrinthe labyrinthe, int[] position) {
