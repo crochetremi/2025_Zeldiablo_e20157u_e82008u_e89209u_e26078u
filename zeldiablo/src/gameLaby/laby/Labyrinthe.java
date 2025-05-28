@@ -195,4 +195,16 @@ public class Labyrinthe {
         // utilise le tableau de boolean
         return this.murs[x][y];
     }
+
+    /**
+     * Méthode génererMonstre
+     */
+    public void genererMonsre(){
+        Monstre monstre = new Monstre();
+    }
+
+    /**
+     * Méthode
+     */
+
 }

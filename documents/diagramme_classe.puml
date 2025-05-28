@@ -36,6 +36,41 @@ class Labyrinthe{
 
 }
 
+class LabyDessin implements DessinJeu{
+
+    + dessinerJeu(Jeu, Canvas): void
+
+}
+
+class LabyJeu implements Jeu{
+    + Labyrinthe : Labyrinthe
+
+    + update(double, Clavier): void
+    + init(): void
+    + etreFini(): boolean
+    + getLabyrinthe(): Labyrinthe
+
+}
+
+class Main{
+    + main(String[] args): void
+}
+
+class MainLaby{
+    + main(String[] args): void
+}
+
+class Perso{
+
+    + x : int
+    + y : int
+
+    + Perso(int, int): void
+    + etrePresent(int, int): boolean
+    + getX(): int
+    + getY(): int
+}
+
 Monstre "1" <-- "*" Labyrinthe : contient
 
 
