@@ -25,14 +25,11 @@ public class Monstre {
             positionvalide = !(labyrinthe.getMur(position[0], position[1]))
         }
         return position;
-<<<<<<< HEAD
     }
 
     private static void choisirCaseHasard(Labyrinthe labyrinthe, int[] position) {
         int length = labyrinthe.getLength();
         position[0] = (int)(Math.random()* length);
         position[1] = (int)(Math.random()* length);
-=======
->>>>>>> 12cd3c2 (monstre)
     }
 }
