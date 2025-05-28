@@ -8,7 +8,6 @@ class Monstre{
 
     + Monstre(): void
     + positionAleatoire(Labyrinthe): void
-    + apparaitre(): void
     + peutSeDeplacer(): void
 
 }
