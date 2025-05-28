@@ -30,14 +30,14 @@ public class LabyDessin implements DessinJeu {
         double px = pj.x;
         double py = pj.y;
         //gc.fillRect(px * 20, py*20, 20, 20);
-        gc.fillArc(px*20, py*20, 20, 20, 0, 360, ArcType.ROUND);
+        gc.fillArc(px*70, py*70, 70, 70, 0, 360, ArcType.ROUND);
 
 
         for(int i = 0; i <laby.getLabyrinthe().getLength(); i++){
             for(int j = 0; j < laby.getLabyrinthe().getLengthY(); j++){
                 if( laby.getLabyrinthe().getMur(i,j) == true ) {
                     gc.setFill(Color.BLACK);
-                    gc.fillRect(i*20,j*20,20,20);
+                    gc.fillRect(i*70,j*70,70,70);
                 }
             }
         }

@@ -12,8 +12,8 @@ public class MainLaby {
         int pFPS = 20;
 
         // creation des objets
-        LabyJeu jeuArk = new LabyJeu();
-        jeuArk.init();
+        LabyJeu jeuLaby = new LabyJeu();
+        jeuLaby.init();
 
         LabyDessin dessinArk = new LabyDessin();
 
@@ -22,6 +22,6 @@ public class MainLaby {
         MoteurJeu.setFPS(pFPS);
 
         // lancement du jeu
-        MoteurJeu.launch(jeuArk, dessinArk);
+        MoteurJeu.launch(jeuLaby, dessinArk);
     }
 }
