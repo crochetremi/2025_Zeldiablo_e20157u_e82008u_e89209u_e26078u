@@ -1,0 +1,7 @@
+28/05 - Itération n°1
+
+Pour cette première itération nous avons décidé d'implémenter :
+     - Génération de monstres immobiles
+     - Déplacement aléatoires des monstres
+
+Ces deux fonctionnalités simples nous permettrons de nous lancer dans la SAE.
