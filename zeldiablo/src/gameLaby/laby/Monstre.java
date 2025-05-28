@@ -17,12 +17,15 @@ public class Monstre {
 
         boolean positionvalide = false;
         while (!positionvalide) {
-            position[0] = (int)(Math.random()*labyrinthe.getLength());
-            position[1] = (int)(Math.random()*labyrinthe.getLength());
-            if(!(labyrinthe.getMur(position[0],position[1]))){
-                positionvalide = true;
-            };
+            choisirCaseHasard(labyrinthe, position);
+            positionvalide = !(labyrinthe.getMur(position[0], position[1]))
         }
+        return position;
+    }
 
+    private static void choisirCaseHasard(Labyrinthe labyrinthe, int[] position) {
+        int length = labyrinthe.getLength();
+        position[0] = (int)(Math.random()* length);
+        position[1] = (int)(Math.random()* length);
     }
 }

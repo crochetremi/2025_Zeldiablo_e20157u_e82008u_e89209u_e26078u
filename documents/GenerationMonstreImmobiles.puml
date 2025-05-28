@@ -8,16 +8,16 @@ activate Labyrinthe
 
 Labyrinthe -> Monstre: Monstre()
 activate Monstre
-
-
-Monstre -> Monstre: positionAleatoire()
-Monstre <-- Monstre: int[]
-
-
 Labyrinthe <-- Monstre
 deactivate Monstre
 
-Labyrinthe -> Labyrinthe: ajouterMonstre(Monstre m)
+Labyrinthe -> Labyrinthe: positionAleatoire()
+Labyrinthe <-- Labyrinthe: int[]
+
+
+
+
+Labyrinthe -> Labyrinthe: ajouterMonstre(Monstre m, x, y)
 
 Main <-- Labyrinthe
 deactivate Labyrinthe
