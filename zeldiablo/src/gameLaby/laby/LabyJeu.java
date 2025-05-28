@@ -21,8 +21,8 @@ public class LabyJeu implements Jeu {
                 labyrinthe.deplacerPerso(Labyrinthe.GAUCHE);
             }
             if(clavier.droite == true){
-                labyrinthe.deplacerPerso(Labyrinthe.DROITE);
-            }
+            labyrinthe.deplacerPerso(Labyrinthe.DROITE);
+        }
     }
 
     public void init()  {
