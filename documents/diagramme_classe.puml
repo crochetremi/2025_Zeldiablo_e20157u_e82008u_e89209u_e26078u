@@ -25,7 +25,7 @@ class Labyrinthe{
     + murs : boolean[][]
 
     + getSuivant(int, int, String): int[]
-    + Labyrinthte(String): void
+    + Labyrinthe(String): void
     + deplacerPerso(String)
     + etreFini(): boolean
     + getLengthY(): int
