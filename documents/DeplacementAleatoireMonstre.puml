@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Main -> Monstre: deplacementAleatoire()
+activate Monstre
+
+Monstre -> Monstre: Math.random() x2
+Monstre -> Monstre: peutSeDeplacer()
+
+activate Monstre
+Monstre <-- Monstre: boolean
+deactivate Monstre
+
+Monstre -> Monstre: deplacerMonstre(String direction)
+
+Main <-- Monstre
+deactivate Monstre
+@enduml
