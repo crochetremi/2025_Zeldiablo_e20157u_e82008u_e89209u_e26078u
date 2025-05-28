@@ -1,6 +1,4 @@
 package gameLaby.laby;
-import gameArkanoid.ArkanoidDessin;
-import gameArkanoid.ArkanoidJeu;
 import moteurJeu.MoteurJeu;
 
 

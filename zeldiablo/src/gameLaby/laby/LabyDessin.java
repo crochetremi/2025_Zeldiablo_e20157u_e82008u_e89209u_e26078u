@@ -1,7 +1,6 @@
 package gameLaby.laby;
 
-import gameArkanoid.ArkanoidJeu;
-import gameArkanoid.Raquette;
+
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
@@ -30,14 +29,14 @@ public class LabyDessin implements DessinJeu {
         double px = pj.x;
         double py = pj.y;
         //gc.fillRect(px * 20, py*20, 20, 20);
-        gc.fillArc(px*70, py*70, 70, 70, 0, 360, ArcType.ROUND);
+        gc.fillArc(px*80, py*80, 80, 80, 0, 360, ArcType.ROUND);
 
 
         for(int i = 0; i <laby.getLabyrinthe().getLength(); i++){
             for(int j = 0; j < laby.getLabyrinthe().getLengthY(); j++){
                 if( laby.getLabyrinthe().getMur(i,j) == true ) {
                     gc.setFill(Color.BLACK);
-                    gc.fillRect(i*70,j*70,70,70);
+                    gc.fillRect(i*80,j*80,80,80);
                 }
             }
         }
