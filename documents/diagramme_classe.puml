@@ -1,0 +1,46 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Monstre{
+
+    - x: int;
+    - y: int;
+
+    + Monstre(): void
+    + positionAleatoire(): void
+    + apparaitre(): void
+    + peutSeDeplacer(): void
+
+}
+
+class Labyrinthe{
+
+    - X : char
+    - P : char
+    - . : char
+    Haut : String
+    Bas : String
+    Gauche : String
+    Droite : String
+    pj : Perso
+    murs : boolean[][]
+
+    + getSuivant(int, int, String): int[]
+    + Labyrinthte(String): void
+    + deplacerPerso(String)
+    + etreFini(): boolean
+    + getLengthY(): int
+    + getLengthX(): int
+    + getMur(int,int): boolean
+    + genererMonstre(): void
+    + ajouterMonstre(Monstre): void
+
+}
+
+Monstre "1" <-- "*" Labyrinthe : contient
+
+
+
+
+
+@enduml
